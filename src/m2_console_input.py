@@ -6,6 +6,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          and Elle Vuotto.
 """  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
+import math
 
 def main():
     """ TESTs the functions in this module (by calling them). """
@@ -67,7 +68,7 @@ def print_an_integer_many_times():
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
 
-    x = int(input('enter integer:'))
+    x = int(input('enter integer: '))
     for k in range(x):
         print(x * 2)
 
@@ -87,17 +88,18 @@ def print_an_integer_many_times_on_one_row():
          1010101010
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # done: 4. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # HINT: One way to print on a SINGLE line is to build up a string
     #       and then print that (single) string.
     # -------------------------------------------------------------------------
-    seq = ()
-    x = int(input('enter integer'))
+    seq = ''
+    x = int(input('enter integer: '))
     for k in range(x):
-        seq = seq + (x * 2)
-        print(seq)
+        add = str(x * 2)
+        seq = seq + add
+    print(seq)
 
 def input_it_all():
     """
@@ -131,9 +133,20 @@ def input_it_all():
          Peace & Love.
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # done: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+
+    x = float(input('enter positive float: '))
+    y = int(input('enter integer: '))
+    z = str(input('enter string: '))
+    for k in range(y):
+        print(math.sqrt(x))
+    for k in range(y):
+        print(z)
+
+
+
 
 
 # -----------------------------------------------------------------------------
