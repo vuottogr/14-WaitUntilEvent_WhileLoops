@@ -30,8 +30,8 @@ Ultimately you should be comfortable with both approaches.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Elle Vuotto.
+"""  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import math
 
@@ -99,10 +99,17 @@ def sum_until_prime_input():
          The sum of the input integers is: 167
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # done: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
 
+    sum = 0
+    while True:
+        x = int(input('enter integer: '))
+        sum = sum + x
+        if is_prime(x) is True:
+            break
+    print('The sum of the integers is: ', sum)
 
 def run_test_next_prime():
     """ Tests the   next_prime    function. """
